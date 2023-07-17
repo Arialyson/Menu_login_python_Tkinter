@@ -1,15 +1,24 @@
 from tkinter import *
+from tkinter import messagebox
 
 app = Tk()
 app.title('Login')
 app.geometry('200x100')
 app.configure(bg='#425DEF')
 
+#Credenciais
+credenciais = ['Arialyson','2023']
+
 #função
 def obter():
     nome = en_1.get()
     senha = en_2.get()
     print('O usuário é, {} e a Senha é {}'.format(nome, senha))
+
+    if nome == 'Arialyson' and senha == '2023':
+        messagebox.showinfo('Login','Seja Bem Vindo!')
+    else:
+        messagebox.showinfo('ERRO', 'Senha inválida, por favor, tente novamente!')
 
 # Label e Entry do usuário
 lb_1 = Label(app, text='Nome:',bg='#425DEF',fg='#fff')
