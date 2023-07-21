@@ -18,7 +18,7 @@ def obter():
     if nome == 'Arialyson' and senha == '2023':
         messagebox.showinfo('Login','Seja Bem Vindo!')
     else:
-        messagebox.showinfo('ERRO', 'Senha inválida, por favor, tente novamente!')
+        messagebox.showerror('ERRO', 'Senha inválida, por favor, tente novamente!')
 
 # Label e Entry do usuário
 lb_1 = Label(app, text='Nome:',bg='#425DEF',fg='#fff')
