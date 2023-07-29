@@ -13,12 +13,12 @@ credenciais = ['Arialyson','2023']
 def obter():
     nome = en_1.get()
     senha = en_2.get()
-    print('O usuário é, {} e a Senha é {}'.format(nome, senha))
+    print('O usuário digitado foi, {} e a Senha digitada foi {}'.format(nome, senha))
 
     if nome == 'Arialyson' and senha == '2023':
         messagebox.showinfo('Login','Seja Bem Vindo!')
     else:
-        messagebox.showerror('ERRO', 'Senha inválida, por favor, tente novamente!')
+        messagebox.showerror('ERROR', 'Senha inválida, por favor, tente novamente!')
 
 # Label e Entry do usuário
 lb_1 = Label(app, text='Nome:',bg='#425DEF',fg='#fff')
