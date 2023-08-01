@@ -17,8 +17,16 @@ def obter():
 
     if nome == 'Arialyson' and senha == '2023':
         messagebox.showinfo('Login','Seja Bem Vindo!')
+        #apagar o que tiver no frame baixo cima
+        for widget in en_1.winfo_children():
+            widget.destroy()
+        for widget in en_2.winfo_children():
+    
     else:
         messagebox.showerror('ERROR', 'Senha inválida, por favor, tente novamente!')
+
+#apos verificar
+
 
 # Label e Entry do usuário
 lb_1 = Label(app, text='Nome:',bg='#425DEF',fg='#fff')
