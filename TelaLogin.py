@@ -21,11 +21,15 @@ def obter():
         for widget in en_1.winfo_children():
             widget.destroy()
         for widget in en_2.winfo_children():
+            widget.destroy()
+        
+        
     
     else:
         messagebox.showerror('ERROR', 'Senha inválida, por favor, tente novamente!')
 
 #apos verificar
+
 
 
 # Label e Entry do usuário
